@@ -1,146 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjeev Kumar — Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev Kumar</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">Sanjeev Kumar</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section class="hero">
-        <div class="hero-image-container">
-            <div class="profile-image">
-                <!-- Replace the src with your actual image path -->
-                <img src="assets/portfolio5.png" alt="Sanjeev Kumar" id="profileImg">
-            </div>
-        </div>
-        <div class="hero-quote">
-            "The best way to predict the future is to build it."
-        </div>
-        <h1>Sanjeev Kumar</h1>
-        <p class="hero-subtitle">Builder. Innovator. Problem Solver.</p>
-        <p class="hero-description">
-            Turning complex challenges into elegant solutions. I build products that matter, 
-            lead teams that ship, and solve problems others think are impossible.
+  <nav>
+    <div class="nav-logo">Sanjeev Kumar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact">Get in touch ›</a></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Engineer · Founder · Problem Solver</p>
+        <p class="hero-mantra">"I show up to solve problems, not fill a role."</p>
+        <h1>Build it right.<br>Scale it far.</h1>
+        <p class="hero-sub">
+          I design and engineer systems that grow to millions of users without growing your costs. From bare-metal infrastructure to product strategy — I go deep on the problems that actually matter.
         </p>
-        <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">View my work</a>
-            <a href="#contact" class="btn btn-secondary">Let's talk</a>
+        <div class="hero-cta">
+          <a href="#work" class="btn-blue">See my work</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
         </div>
-    </section>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="assets/portfolio6.png" alt="Sanjeev Kumar" class="hero-photo" />
+      </div>  
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-num">2.1M+</div>
+        <div class="stat-label">Users served across Android and web</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">80%</div>
+        <div class="stat-label">Infrastructure cost reduction — zero performance loss</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Continents of hands-on engineering experience</div>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello, I'm Sanjeev Kumar — a globally trained systems engineer and technology founder with a Master's degree in Software Engineering from New Zealand and a Bachelor's degree in Electrical and Electronics Engineering from Europe.</p>
-                
-                    <p>I have led and engineered platform-scale projects focused on delivering high performance at significantly optimized infrastructure costs. My work emphasizes building technology that scales efficiently without unnecessary operational overhead.</p>
-                
-                    <p>One of the platforms I contributed to has grown to serve over 1.6 million users and continues to scale, demonstrating the effectiveness of cost-conscious, performance-first architecture.</p>
-                
-                    <p>My expertise spans hardware-aware engineering, ISP-level networking environments, bare-metal server systems, backend architecture, and cloud infrastructure design. I focus on building resilient platforms that balance scale, reliability, and sustainability.</p>
-                </div>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-name">Frontend Development</div>
-                        <div class="skill-level">React, Vue, TypeScript</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Backend Development</div>
-                        <div class="skill-level">Node.js, Python, PostgreSQL</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Design</div>
-                        <div class="skill-level">UI/UX, Figma, Prototyping</div>
-                    </div>
-                </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="section-title reveal">The engineer who thinks<br>like a founder.</h2>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm Sanjeev Kumar — systems engineer and technology founder based in New Zealand. <strong>MSc Software Engineering. BEng Electrical & Electronics.</strong> Built and shipped at scale across Europe and New Zealand.</p>
+          <p>I think from hardware up. That's how you find the cost savings, the bottlenecks, and the architectural decisions that actually matter — before they become expensive problems.</p>
+          <p>I don't just ship features. I ask why something costs what it costs, and what it would take to build it right the first time. And if the answer requires learning something new — that's not a barrier, that's the job.</p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="about-card">
+           
+            <div class="about-card-title">Systems Thinking</div>
+            <div class="about-card-desc">First principles from hardware up. Linux, nginx, load balancers, bare-metal — I know what's running underneath.</div>
+          </div>
+          <div class="about-card">
+           
+            <div class="about-card-title">Cost Engineering</div>
+            <div class="about-card-desc">80% infrastructure cost cut on a 2.1M+ user platform. Storage, encoding, databases — rebuilt from the ground up.</div>
+          </div>
+          <div class="about-card">
+           
+            <div class="about-card-title">Founder's Lens</div>
+            <div class="about-card-desc">Built and scaled a product from zero. I make decisions like an owner — speed, quality, and long-term sustainability.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="section">
+      <p class="section-eyebrow reveal">Featured Work</p>
+      <h2 class="section-title reveal">Real problems.<br>Measurable results.</h2>
+      <p class="section-subtitle reveal">A selection of projects where the thinking mattered as much as the code.</p>
+
+      <div class="projects-grid">
+        <div class="project-card featured reveal">
+          <div>
+            <div class="project-num" style="margin-bottom:12px;">01 — Featured</div>
+            <div class="project-title" style="margin-bottom:16px;">Large-Scale Streaming Platform</div>
+            <div class="project-desc">Founded and engineered a complete ecosystem — web, Android, and in-house technology — from zero to 2.1M+ users. Owned backend architecture, infrastructure, and product strategy. Achieved 80% cost reduction by rethinking storage, encoding pipelines, and database architecture. Zero performance impact.</div>
+            <div class="project-tags" style="margin-top:24px;">
+              <span class="project-tag">Founder</span>
+              <span class="project-tag">Backend</span>
+              <span class="project-tag">Infrastructure</span>
+              <span class="project-tag">Android</span>
+              <span class="project-tag">Product Strategy</span>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <h3 class="project-title">E-Commerce Platform</h3>
-                    <p class="project-description">
-                        A modern online shopping experience with seamless checkout, 
-                        inventory management, and analytics.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">View project</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <h3 class="project-title">AI Content Studio</h3>
-                    <p class="project-description">
-                        Machine learning powered platform for creative content 
-                        generation and editing.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">React</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">View project</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card fade-in">
-                    <h3 class="project-title">Team Workspace</h3>
-                    <p class="project-description">
-                        Real-time collaboration tool with video conferencing 
-                        and project management.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">WebRTC</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">View project</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
-                </div>
+          </div>
+          <div class="project-impact">
+            <div>
+              <div class="impact-figure">2.1M+</div>
+              <div class="impact-desc">Users on Android and web</div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's work together</h2>
-            <p class="contact-text">
-                I'm always interested in hearing about new projects and opportunities.
-            </p>
-            <a href="/cdn-cgi/l/email-protection#cdbeaca3a7a8a8bbe3a6b8a0acbf8da8b5aca0bda1a8e3aea2a0" class="contact-email"><span class="__cf_email__" data-cfemail="abd8cac5c1cecedd85c0dec6cad9ebced3cac6dbc7ce85c8c4c6">[email&#160;protected]</span></a>
-            <div class="social-links">
-                <a href="#" class="social-link">GH</a>
-                <a href="#" class="social-link">LI</a>
-                <a href="#" class="social-link">TW</a>
-                <a href="#" class="social-link">DR</a>
+            <div>
+              <div class="impact-figure">80%</div>
+              <div class="impact-desc">Infrastructure cost reduction</div>
             </div>
+            <div>
+              <div class="impact-figure">0%</div>
+              <div class="impact-desc">Performance degradation</div>
+            </div>
+          </div>
         </div>
-    </sect
+
+        <div class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-title">Media Streaming Infrastructure</div>
+          <div class="project-desc">Engineering at European media companies across transcoding, CDN, live streaming, VOD, and ISP-level bare-metal infrastructure. Systems where downtime isn't an option.</div>
+          <div class="project-tags">
+            <span class="project-tag">Streaming</span>
+            <span class="project-tag">CDN</span>
+            <span class="project-tag">Bare-metal</span>
+            <span class="project-tag">ISP</span>
+            <span class="project-tag">VOD</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-title">Smart Car Rental Platform</div>
+          <div class="project-desc">A Python-based car rental system with an intelligent recommendation engine that personalises vehicle suggestions based on user behaviour and trip context. Includes a full admin panel for fleet and booking management.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Recommendations</span>
+            <span class="project-tag">Admin Panel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section">
+      <p class="section-eyebrow reveal">Expertise</p>
+      <h2 class="section-title reveal">What I bring<br>to the table.</h2>
+      <p class="section-subtitle reveal">A rare combination of low-level systems knowledge and high-level product thinking.</p>
+      <div class="skills-grid reveal">
+        <div class="skill-cell">
+          <div class="skill-cat">Infrastructure</div>
+          <div class="skill-name">Systems & Networks</div>
+          <div class="skill-items">Linux · Nginx · Load balancers · Bare-metal · ISP networking · CDN · Cost optimisation</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Streaming</div>
+          <div class="skill-name">Video Engineering</div>
+          <div class="skill-items">Transcoding & encoding · Live streaming · VOD · Adaptive bitrate · Content delivery</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Backend</div>
+          <div class="skill-name">Architecture & APIs</div>
+          <div class="skill-items">Node.js · Python · PostgreSQL · Database optimisation · Scalable system design</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Frontend</div>
+          <div class="skill-name">Web & Mobile</div>
+          <div class="skill-items">React · Vue · TypeScript · Android · Performance optimisation</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Product</div>
+          <div class="skill-name">Strategy & Leadership</div>
+          <div class="skill-items">Team leadership · 0-to-1 building · Product strategy · Roadmapping</div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Foundation</div>
+          <div class="skill-name">Engineering Mindset</div>
+          <div class="skill-items">MSc Software Engineering · BEng Electrical & Electronics · Hardware-aware thinking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <h2 class="contact-title reveal">Let's build<br>something great.</h2>
+      <p class="contact-sub reveal">Open to senior engineering roles, consulting, and co-founding opportunities. If you're building something ambitious, I'd love to hear about it.</p>
+      <button class="linkedin-btn reveal" id="linkedinBtn" onclick="revealLinkedIn()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        View LinkedIn Profile
+      </button>
+      <div class="linkedin-reveal" id="linkedinReveal">
+        <a href="https://www.linkedin.com/in/sanjeev-kumar-b91b32154/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/sanjeev-kumar-b91b32154 ›
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Sanjeev Kumar</span>
+      <span class="footer-location">Based in New Zealand · Open to global opportunities</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
